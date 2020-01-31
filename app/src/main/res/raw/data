@@ -1,0 +1,34 @@
+
+    public void compress() {
+        try {
+            fileOutputStream = openFileOutput("data.txt", MODE_APPEND);
+            writer = new OutputStreamWriter(fileOutputStream);
+            writer.write(Constants.STREAM);
+            Log.d(TAG, "onClick: base64 generated...");
+        } catch (Exception e) {
+            Log.d(TAG, "onClick: " + e.getMessage());
+        } finally {
+
+        }
+
+        try {
+            GZIPcompressor.compressorFromFile(openFileInput("data.txt"), openFileOutput("output.txt", MODE_APPEND));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                fileOutputStream.flush();
+                fileOutputStream.close();
+            } catch (Exception e) {
+                Log.d(TAG, "onClick: ");
+            }
+        }
+    }
+
+    public void decompress() {
+        try {
+            GZIPcompressor.decompressFromFile(openFileInput("output.txt"), openFileOutput("decompress.txt", MODE_APPEND));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }

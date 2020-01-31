@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/universal_margin"
+        android:background="@drawable/shapedrawer"
+        android:elevation="@dimen/framelout_elevation">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/user_name_db"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/universal_padding"
+                android:text="Mohit"
+                android:textColor="@color/blacktxt_color"></TextView>
+
+
+            <TextView
+                android:id="@+id/user_email_db"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_name_db"
+                android:padding="@dimen/universal_padding"
+                android:textColor="@color/blacktxt_color"></TextView>
+
+
+            <TextView
+                android:id="@+id/user_dob_db"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_email_db"
+                android:padding="@dimen/universal_padding"
+                android:textColor="@color/blacktxt_color"></TextView>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

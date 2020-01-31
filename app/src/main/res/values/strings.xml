@@ -1,0 +1,89 @@
+<resources>
+
+    <!-- App level Entery -->
+    <string name="app_name">LogRegsiterApp</string>
+
+    <!-- Splash Screen message-->
+    <string name="welcome_mesage">Welcome to App</string>
+
+    <!-- Login Screen -->
+    <string name="login_message">Please Login</string>
+    <string name="signup_message">Please, Sign Up</string>
+    <string name="newuser">If you are new user please </string>
+
+    <string name="signin">Sign In</string>
+    <string name="signup">Sign Up</string>
+
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+
+    <string name="login_hinttxt">Enter Your Email...</string>
+    <string name="login_btntxt">login</string>
+
+
+    <string name="drawer_open">Open</string>
+    <string name="drawser_close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--REGISTRATION SCREEN (SNACKBAR)-->
+    <string name="fields_cannot_empty">"Fields Can't be empty"</string>
+    <string name="user_added_successfully">User Successfully Added</string>
+    <string name="user_not_added">User Not Added</string>
+    <string name="already_registered">Email Already Registered, Try Another..</string>
+
+    <!--LOGIN SCREEN (SNACKBAR)-->
+    <string name="wrong_password">Entered Wrong Password</string>
+    <string name="user_not_exists">User Does Not Exists</string>
+    <string name="enter_proper_email">Please Enter Proper Email</string>
+
+
+    <!--TOOLBAR TITLE NAME CONSTANT-->
+    <string name="usersList">Users</string>
+    <string name="volley">Volley</string>
+    <string name="asyncTask">Async Task</string>
+    <string name="okHttp">Ok Http</string>
+    <string name="retrofit">Retrofit</string>
+    <string name="profile">Profile</string>
+    <string name="jsonfile">Parsing Json Through File</string>
+
+
+    <string name="receiver">Receiver Invoked</string>
+    <string name="namehint">Name</string>
+    <string name="dateofbirth_hint">Date of Birth</string>
+    <string name="toolbartitle">Home</string>
+    <string name="userprofiletext">User Profile :</string>
+    <string name="internet_not_connected_msg">You are not connected to internet please ON internet connection.</string>
+    <string name="json_object_key">title</string>
+    <string name="json_file_name">data.json</string>
+    <string name="json_charset">UTF-8</string>
+    <string name="enter_email_msg_error">please enter email</string>
+    <string name="enter_password_msg_error">please enter password</string>
+    <string name="toolbar_text_color">#ffffff</string>
+    <string name="internet_connected_msg">You are connected to internet</string>
+    <string name="wifi_on_msg">wifi is not on</string>
+    <string name="dialog_titile">LOGOUT</string>
+    <string name="dialog_msg">Are you sure to exit?</string>
+    <string name="dialog_positive">Logout</string>
+    <string name="dialog_negative">No</string>
+    <string name="date_format">MM/dd/yyyy</string>
+    <string name="exception_title">EXCEPTION</string>
+    <string name="exception_positive">ok</string>
+    <string name="extra_thing">Extra Thing</string>
+    <string name="logout_menu">Logout</string>
+    <string name="create_object">Take from Gallary</string>
+    <string name="decompressed"><![CDATA[after decompressed compressed byte array in original string ->]]></string>
+    <string name="compressed"><![CDATA[after compressed a base64 string ans returns an byte array \n->]]></string>
+    <string name="bytearray"><![CDATA[this is byte array value->]]></string>
+    <string name="selectOption">Select Option</string>
+    <string name="picture_camera">take from camera</string>
+    <string name="firebase">Firebase</string>
+    <string name="firebase_onclick_button_txt">firebase</string>
+    <string name="msg_token">token message</string>
+    <string name="alarm">Alarm Manager</string>
+    <string name="set_time_hint">Set Time</string>
+    <string name="set_alarm_button">Set Alarm</string>
+</resources>
+
+

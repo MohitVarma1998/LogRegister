@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ExtraActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/CustomToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/splashbg_color"
+        android:minHeight="?attr/actionBarSize"
+        app:title="@string/toolbartitle"
+        app:titleTextColor="@color/white_color"></androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/CustomToolBar">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/picture_gallary"
+                android:layout_gravity="center"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/universal_margin"
+                android:insetLeft="@dimen/framelout_elevation"
+                android:text="@string/create_object"></com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/picture_camera"
+                android:layout_gravity="center"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/universal_margin"
+                android:insetLeft="@dimen/framelout_elevation"
+                android:text="@string/picture_camera"></com.google.android.material.button.MaterialButton>
+
+
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/icon"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/base64"></ImageView>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:src="@drawable/icon"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/compressed"></ImageView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/bytearray"
+                android:textSize="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/base64string"
+                android:textSize="@dimen/_20sdp"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

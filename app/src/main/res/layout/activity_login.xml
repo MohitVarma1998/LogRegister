@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/context_relative_for_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:padding="@dimen/universal_padding"
+    tools:context=".activities.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shapedrawer"
+                android:elevation="@dimen/framelout_elevation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="@dimen/login_content_padding">
+
+                    <TextView
+                        android:id="@+id/login_txt"
+                        style="@style/MyTextTheme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="@string/login_message"
+                        android:textColor="@color/blacktxt_color"></TextView>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInput_email"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/login_txt"
+                        android:layout_marginBottom="@dimen/universal_margin"
+                        android:hint="@string/email_hint">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edittxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInput_password"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textInput_email"
+                        android:hint="@string/password_hint">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/password_editext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/login_button"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textInput_password"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/universal_margin"
+                        android:insetLeft="@dimen/framelout_elevation"
+                        android:text="@string/signin">
+
+                    </com.google.android.material.button.MaterialButton>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/login_button"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/universal_margin"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/login_button"
+                            android:text="@string/newuser"
+                            android:textColor="@color/blacktxt_color"
+                            android:textSize="@dimen/univarsal_textsize"
+                            app:fontFamily="@font/montserrat_bold"></TextView>
+
+                        <TextView
+                            android:id="@+id/sign_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/universal_margin"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="@string/signup"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/univarsal_textsize"></TextView>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="signuphead">28sp</dimen>
+    <dimen name="headertxtpaddingleft">30dp</dimen>
+    <dimen name="headerimagewidth">50dp</dimen>
+    <dimen name="headerimageheight">50dp</dimen>
+    <dimen name="headertxtsizeforemail">12sp</dimen>
+    <dimen name="headertxtsizeforname">18sp</dimen>
+</resources>

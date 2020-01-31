@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="universal_padding">10dp</dimen>
+    <dimen name="universal_margin">10dp</dimen>
+
+    <dimen name="framelout_elevation">4dp</dimen>
+
+    <dimen name="univarsal_textsize">14sp</dimen>
+
+    <dimen name="base_size">28dp</dimen>
+    <dimen name="login_content_padding">20dp</dimen>
+
+    <dimen name="framelayout_margintop">60dp</dimen>
+</resources>

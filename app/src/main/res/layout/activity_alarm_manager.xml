@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AlarmManagerActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/CustomToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/splashbg_color"
+        android:minHeight="?attr/actionBarSize"
+        app:title="@string/alarm"
+        app:titleTextColor="@color/white_color"></androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:layout_below="@id/CustomToolBar"
+        android:id="@+id/linear_layout_alarm"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="@dimen/_20sdp"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/set_time_hint"
+            android:id="@+id/layout_settime"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/set_time_edittext"
+                android:layout_height="wrap_content"></com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:id="@+id/set_alarm_button"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/set_alarm_button"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.button.MaterialButton>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

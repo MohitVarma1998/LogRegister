@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.logregsiterapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.Camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.AlarmManagerActivity"></activity>
+        <activity android:name=".activities.LogAppFirebaseMessagingEventActivity" />
+        <activity
+            android:name=".activities.ExtraActivity"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".fragments.UsersFragment"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity android:name=".activities.RegisterationActivity" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <receiver android:name=".broadcast.NetworkBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcast.ABroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcast.AorderedBroadcast">
+            <intent-filter
+                android:order="10"
+                android:priority="110">
+                <action android:name="this.is.Aorderedaction" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcast.BorderedBroadcast">
+            <intent-filter
+                android:order="30"
+                android:priority="130">
+                <action android:name="this.is.Aorderedaction" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcast.CorderedBroadcast">
+            <intent-filter
+                android:order="20"
+                android:priority="120">
+                <action android:name="this.is.Aorderedaction" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcast.PowerBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".service.MyFirebaseService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_launcher_background" />
+    </application>
+
+</manifest>

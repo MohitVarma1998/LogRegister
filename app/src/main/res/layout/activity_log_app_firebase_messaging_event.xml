@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LogAppFirebaseMessagingEventActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/CustomToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/splashbg_color"
+        android:minHeight="?attr/actionBarSize"
+        app:title="@string/toolbartitle"
+        app:titleTextColor="@color/white_color"></androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="@dimen/_150sdp"
+        android:id="@+id/firebase_onclick_btn"
+        android:layout_below="@id/CustomToolBar"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/white_color"
+        android:text="@string/firebase_onclick_button_txt">
+
+    </com.google.android.material.button.MaterialButton>
+
+</RelativeLayout>
